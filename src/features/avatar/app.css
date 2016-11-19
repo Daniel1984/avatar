@@ -1,0 +1,44 @@
+.avatar-app_close-list-shield {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.avatar-app_list-container {
+	transform: scale(0);
+	width: 310px;
+	margin: 0 auto;
+}
+
+.avatar-app_list-container--fadeOut {
+	animation: 0.7s 1 forwards fadeOutAnimation;
+}
+
+.avatar-app_list-container--fadeIn {
+	animation: 0.7s 1 forwards fadeInAnimation;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		transform: scale(0);
+	}
+
+	20%, 90% {
+		transform: scale(1.2);
+	}
+
+	90%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeOutAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	20%, 100% {
+		transform: scale(0);
+	}
+}

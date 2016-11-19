@@ -1,0 +1,40 @@
+.avatar-list {
+	position: relative;
+	/* using 282 here because -> 60 * 4 + (margin between two avatars || 14px) = 282px */
+	width: 282px;
+	border-radius: 2px;
+	background-color: rgb(44, 48, 51);
+	box-shadow: 0px 0px 10px 2px rgb(102, 102, 102);
+	margin: 8px auto 0;
+	padding: 14px;
+	transform: translate3d(0, 0, 0);
+}
+
+.avatar-list_elements {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.avatar-list:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgb(44, 48, 51);
+}
+
+.avatar-list_title {
+	font-family: 'Source Sans Pro';
+	color: rgb(249, 249, 249);
+	font-size: 16px;
+	margin: 14px 0;
+	text-align: center;
+	clear: both;
+}
